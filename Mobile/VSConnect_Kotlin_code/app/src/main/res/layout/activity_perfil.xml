@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PerfilActivity"
+        android:background="@color/azul_marinho"
+>
+
+    <LinearLayout
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/linearLayout">
+
+        <ImageView
+                android:id="@+id/leftImg"
+                android:layout_width="27dp"
+                android:layout_height="29dp"
+                android:layout_gravity="center"
+                android:background="@drawable/baseline_arrow_back_24"
+                tools:layout_editor_absoluteY="1dp" tools:layout_editor_absoluteX="3dp"/>
+
+        <TextView
+                android:layout_weight="1"
+                android:id="@+id/titulo_editar_imagem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:text="Meu Perfil"
+                android:textColor="@color/white"
+                android:fontFamily="@font/titilliumweb_bold"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp" app:layout_constraintHorizontal_bias="0.0"/>
+    </LinearLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:id="@+id/id_view_imagem_perfil"
+            app:civ_border_width="2dp"
+            app:civ_circle_background_color="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fperfil"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/styleCard"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintVertical_bias="0.112"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
+
+    <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/icone_lapis"
+            android:src="@drawable/icone_lapis"
+            app:layout_constraintTop_toTopOf="@+id/id_view_imagem_perfil"
+            app:layout_constraintStart_toStartOf="@+id/id_view_imagem_perfil"
+            app:layout_constraintEnd_toEndOf="@+id/id_view_imagem_perfil"
+            app:layout_constraintBottom_toBottomOf="@+id/id_view_imagem_perfil"
+            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="1.0"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/styleCard"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:background="@drawable/style_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_view_imagem_perfil">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+        >
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/nome"
+                    android:textSize="18dp"
+                    android:textColor="@color/azul_marinho"
+                    android:fontFamily="@font/titilliumweb_bold"
+                    android:text="Nome usuario"
+                    android:maxLength="20"
+                    android:layout_marginRight="5dp"
+            />
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/setor"
+                    android:textSize="18dp"
+                    android:textColor="@color/azul_marinho"
+                    android:fontFamily="@font/titilliumweb_bold"
+                    android:text="Setor usuario"
+                    android:gravity="end"
+            />
+
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/titilliumweb_light"
+                android:maxLength="200"
+                android:layout_marginTop="8dp"
+                android:text="email@email.com"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+        />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/funcao"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/titilliumweb_light"
+                android:maxLength="200"
+                android:layout_marginTop="8dp"
+                android:text="Funcao do usuario"
+
+        />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

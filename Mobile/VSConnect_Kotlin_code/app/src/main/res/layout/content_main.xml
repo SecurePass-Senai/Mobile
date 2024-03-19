@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+    <ImageView
+            android:id="@+id/imageViewBackground"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+            android:layout_width="339dp"
+            android:layout_height="281dp"
+            app:srcCompat="@drawable/logo2"
+            android:id="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="30dp"/>
+    <Button
+            android:text="VWEQS"
+            android:textAllCaps="false"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:id="@+id/buttonVWEQS"
+            android:fontFamily="@font/titilliumweb_bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/azul_turquesa"
+            android:shape="oval"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:shadowRadius="500"
+            app:circularflow_radiusInDP="200"
+            tools:ignore="MissingConstraints" app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" android:layout_marginTop="52dp"/>
+    <Button
+            android:text="PERFIL"
+            android:textAllCaps="false"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:id="@+id/buttonPerfil"
+            android:fontFamily="@font/titilliumweb_bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/azul_turquesa"
+            android:shape="oval"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:shadowRadius="500"
+            app:circularflow_radiusInDP="200"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@+id/buttonVWEQS"
+            android:layout_marginTop="44dp"/>
+    <Button
+            android:text="SAIR"
+            android:textAllCaps="false"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:id="@+id/buttonSair"
+            android:fontFamily="@font/titilliumweb_bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/azul_turquesa"
+            android:shape="oval"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:shadowRadius="500"
+            app:circularflow_radiusInDP="200"
+            android:layout_marginTop="44dp"
+            app:layout_constraintTop_toBottomOf="@+id/buttonPerfil"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewBackground"
+            app:layout_constraintVertical_bias="0.0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
